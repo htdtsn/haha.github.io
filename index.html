@@ -158,18 +158,18 @@ const typeWriter = () => {
         index++;
         if (index > quote.length) {
             isDeleting = true;
-            setTimeout(typeWriter, 1000); 
+            setTimeout(typeWriter, 10); 
         } else {
-            setTimeout(typeWriter, 100);
+            setTimeout(typeWriter, 10);
         }
     } else {
         bioText.textContent = currentText.slice(0, -1);
         if (bioText.textContent === "") {
             isDeleting = false;
             index = 0;
-            setTimeout(typeWriter, 500); 
+            setTimeout(typeWriter, 5); 
         } else {
-            setTimeout(typeWriter, 50); 
+            setTimeout(typeWriter, 5); 
         }
     }
 };
